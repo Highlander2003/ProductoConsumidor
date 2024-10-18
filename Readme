@@ -12,7 +12,7 @@ Este proyecto implementa el clásico problema del productor-consumidor utilizand
 
 ### Explicación de la Salida
 
-    Estado del Buffer: La salida del estado del buffer ahora incluye:
+    Estado del Buffer: La salida del estado del buffer incluye:
 
     [*]: Indica la posición de inserción.
     [x]: Indica la posición de extracción.

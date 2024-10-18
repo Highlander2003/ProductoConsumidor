@@ -104,8 +104,6 @@ public class ProductorConsumidor {
         for (int i = 0; i < 2; i++) {
             new Productor(buffer).start();
         }
-        
-        // Inicia consumidores
         for (int i = 0; i < 3; i++) {
             new Consumidor(buffer).start();
         }

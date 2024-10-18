@@ -12,16 +12,12 @@ Este proyecto implementa el clásico problema del productor-consumidor utilizand
 
 ### Explicación de la Salida
 
-1. **Producto añadido: [Número]**: Indica que un productor ha generado un nuevo número (por ejemplo, 42) y lo ha añadido al buffer.
-2. **Estado del buffer**: Muestra la representación actual del buffer:
-   - `[*]`: Indica la posición donde se insertará el próximo producto.
-   - `[x]`: Muestra la posición del próximo producto que será consumido.
-   - Números: Representan los productos actualmente en el buffer.
-   - `~`: Indica espacios vacíos en el buffer.
-3. **Producto consumido: [Número]**: Indica que un consumidor ha extraído un número del buffer (por ejemplo, 42).
+    Estado del Buffer: La salida del estado del buffer ahora incluye:
 
-Este ciclo de producción y consumo continuará indefinidamente, mostrando el estado actualizado del buffer en cada paso.
-
+    [*]: Indica la posición de inserción.
+    [x]: Indica la posición de extracción.
+    Números en el buffer: Los elementos actualmente almacenados.
+    ~: Representa espacios vacíos en el buffer.
 ## Consideraciones
 
 - El tamaño del buffer está definido en el código (actualmente 10), pero se puede ajustar en la clase `ProductorConsumidor`.

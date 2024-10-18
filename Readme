@@ -1,18 +1,18 @@
 
-# Productor-Consumidor en Java
+Productor-Consumidor en Java
 
-Este proyecto implementa el clásico problema de **Productor-Consumidor** utilizando semáforos en Java. El programa simula un sistema donde varios productores generan elementos y los colocan en un buffer compartido, mientras que varios consumidores retiran esos elementos para procesarlos.
+Este proyecto implementa el clásico problema de  Productor-Consumidor  utilizando semáforos en Java. El programa simula un sistema donde varios productores generan elementos y los colocan en un buffer compartido, mientras que varios consumidores retiran esos elementos para procesarlos.
 
-## Descripción
+Descripción
 
 El buffer tiene un tamaño máximo de 10 elementos. Se utilizan semáforos para controlar el acceso al buffer y asegurar que solo un productor o consumidor acceda al buffer en un momento dado. 
 
-### Clases Principales
+Clases Principales
 
-- **Buffer**: Implementa la lógica del buffer compartido, controlando el acceso mediante semáforos.
-- **Productor**: Extiende `Thread` y genera números aleatorios, insertándolos en el buffer.
-- **Consumidor**: Extiende `Thread` y extrae números del buffer para procesarlos.
-- **ProductorConsumidor**: Clase principal que inicia los hilos de productores y consumidores.
+-  Buffer : Implementa la lógica del buffer compartido, controlando el acceso mediante semáforos.
+-  Productor : Extiende `Thread` y genera números aleatorios, insertándolos en el buffer.
+-  Consumidor : Extiende `Thread` y extrae números del buffer para procesarlos.
+-  ProductorConsumidor : Clase principal que inicia los hilos de productores y consumidores.
 
 Funcionamiento
 Productores: Cada productor genera un número entero aleatorio y lo coloca en el buffer. Si el buffer está lleno, el productor espera hasta que haya espacio disponible.
